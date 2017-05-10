@@ -4,17 +4,17 @@ using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 
-namespace QuickGame
+namespace QuickGame.Controller 
 {
 	/// <summary>
 	/// This is the main type for your game.
 	/// </summary>
-	public class Game1 : Game
+	public class FirstGame : Game
 	{
 		GraphicsDeviceManager graphics;
 		SpriteBatch spriteBatch;
 
-		public Game1()
+		public FirstGame()
 		{
 			graphics = new GraphicsDeviceManager(this);
 			Content.RootDirectory = "Content";
@@ -70,7 +70,7 @@ namespace QuickGame
 		/// <param name="gameTime">Provides a snapshot of timing values.</param>
 		protected override void Draw(GameTime gameTime)
 		{
-			graphics.GraphicsDevice.Clear(Color.CornflowerBlue);
+			graphics.GraphicsDevice.Clear(Color.Turquoise);
 
 			//TODO: Add your drawing code here
 
